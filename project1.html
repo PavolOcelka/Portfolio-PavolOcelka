@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindMate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- Pre projekt č. 1 pridáme triedu "project-one" -->
+<body class="project-detail project-one">
+  <!-- Header with Navigation -->
+  <header>
+    <div class="container header-container">
+      <h1>Pavol Ocelka</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Project Detail Section -->
+    <section class="project-detail-section">
+      <div class="container">
+        <!-- Nadpis (v strede) -->
+        <h1 class="project-title">MindMate IOS App</h1>
+        <!-- Hlavný obrázok -->
+        <div class="project-main-image">
+          <img src="Images/mindmateicon.png" alt="Main Project Image">
+        </div>
+        <!-- Technológie a detailný popis -->
+        <div class="project-info">
+          <p class="technologies"><strong>Technologies:</strong> Swift, SwiftUI, Engine Haptics</p>
+          <p class="description">
+            MindMate is a mental well-being app designed to help you understand and manage your emotions better. It features tools like box breathing and a sleep calculator for relaxation and better sleep. You can track your mood daily, write a journal, and use the mood dictionary to expand your emotional vocabulary—so you can describe how you feel beyond just "good" or "bad."
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SECTION 1: Text left, Image right -->
+    <section class="project-additional">
+      <div class="container">
+        <div class="additional-content">
+          <!-- Textová časť (vľavo) -->
+          <div class="additional-text">
+            <h1 style="font-size: 5rem; margin-bottom: 30px;">
+              Main View
+            </h1>
+            <p>
+              The <strong>Main View</strong> in <strong>MindMate</strong> gives you a quick overview of your mental state. Here’s what you’ll find:
+          </p>
+          <ul>
+              <li><strong>Mood Tracking</strong> – Log your mood daily with dynamic color gradients reflecting your emotions.</li>
+              <li><strong>Journal</strong> – Write down your thoughts and feelings, with your latest entry always at the top.</li>
+              <li><strong>Interactive Character</strong> – Tap to access tools for stress management and better sleep.</li>
+              <li><strong>Quick Access to Mood Dictionary</strong> – Helps you describe your emotions more precisely.</li>
+          </ul>
+          <p>
+              The design features gradient backgrounds, smooth animations, and intuitive navigation for a seamless user experience.
+          </p>
+          
+          </div>
+          <!-- Obrázková časť (napravo) -->
+          <div class="additional-image">
+            <img src="Images/mainView.png" alt="Additional Project Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Image left, Text right (reversed layout) -->
+    <!-- SECTION 2: IMAGE LEFT, TEXT RIGHT -->
+<section class="project-additional">
+  <div class="container">
+    <div class="additional-content">
+      <!-- Image (left) -->
+      <div class="additional-image">
+        <img src="Images/moodDictionary.png" alt="Additional Project Image #2">
+      </div>
+      <!-- Text (right) -->
+      <div class="additional-text">
+        <h1 style="font-size: 3rem; margin-bottom: 30px;">
+          Mood Dictionary
+        </h1>
+        <p>
+          Explore a collection of emotions, each with a brief description to help you better understand various emotional states. This section is designed to provide insights into feelings such as happiness, sadness, anger, anxiety, and more, offering a visual representation through color gradients for a more intuitive experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-additional-two">
+  <div class="container">
+    <div class="additional-content">
+      <!-- Textová časť (vľavo) -->
+      <div class="additional-text">
+        <h1>Mood Tracking</h1>
+        <p>
+          The MoodDetailView provides users with a detailed view of their mood entries. Users can create, edit, and delete mood records, each accompanied by a mood category (e.g., Happy, Sad, Angry, etc.). The user interface allows for a title input field, a picker for selecting the mood category, and a text editor to describe the mood in detail.
+        </p>
+        <p><strong>Features:</strong></p>
+        <ul>
+          <li><strong>Mood Input:</strong> Users can input a title for their mood entry.</li>
+          <li><strong>Mood Category Selection:</strong> A picker is provided to choose a mood category from a list of predefined options.</li>
+          <li><strong>Text Description:</strong> Users can write detailed descriptions of their mood.</li>
+          <li><strong>Font Size Adjustment:</strong> A slider allows users to adjust the font size of the mood description.</li>
+          <li><strong>Delete Option:</strong> Users can delete a mood entry by clicking the trash icon.</li>
+        </ul>
+      </div>
+      <!-- Obrázková časť (napravo) -->
+      <div class="additional-images">
+        <img src="Images/moodEntry.png" alt="Additional Project Image">
+        <img src="Images/moodEntryDetail.png" alt="Additional Project Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+
+    <section class="project-additional">
+      <div class="container">
+        <div class="additional-content">
+          <!-- Image (left) -->
+          <div class="additional-image">
+            <img src="Images/journalEntryDetail.png" alt="Additional Project Image #2">
+          </div>
+          <!-- Text (right) -->
+          <div class="additional-text">
+            <h1 style="font-size: 3rem; margin-bottom: 30px;">
+              Journals
+            </h1>
+            <p>
+              The JournalDetailView provides users with a detailed interface for managing individual journal entries. Users can update the journal title using an input field, view the formatted entry date, and edit their content in an intuitive text editor.
+            </p>
+            <p>
+              <strong>Features:</strong>
+            </p>
+            <ul>
+              <li><strong>Title Editing:</strong> Modify the journal title easily with a prominent text field.</li>
+              <li><strong>Date Display:</strong> The entry date is clearly shown for context.</li>
+              <li><strong>Content Editor:</strong> A guided text editor helps users record their thoughts and experiences with a placeholder prompt.</li>
+              <li><strong>Font Size Adjustment:</strong> A slider allows users to adjust the text size for comfortable reading.</li>
+              <li><strong>Deletion Capability:</strong> A delete button enables the removal of a journal entry.</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-additional-four">
+      <div class="container">
+        <div class="additional-content">
+          <!-- Textová časť -->
+          <div class="additional-text">
+            <h1 style="font-size: 3rem; margin-bottom: 30px;">
+              Activities
+            </h1>
+            <p>
+              <strong>Stress & Anxiety</strong> activity helps manage stress through a simple breathing exercise. Tap to start the cycle:
+          </p>
+          
+          <p>
+              <strong>Inhale:</strong> Deep breath in.
+          </p>
+          <p>
+              <strong>Hold:</strong> Hold your breath.
+          </p>
+          <p>
+              <strong>Exhale:</strong> Slowly release your breath.
+          </p>
+          
+          <p>
+              For better <strong>Sleep</strong>, use the Sleep Calculator to find the ideal bedtimes based on your wake-up time.
+          </p>
+          
+          </div>
+          <!-- Obrázková časť (tri obrázky pod textom) -->
+          <div class="additional-images">
+            <img src="Images/activity.png" alt="Project Image 1">
+            <img src="Images/breathing.png" alt="Project Image 2">
+            <img src="Images/sleep.png" alt="Project Image 3">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- Sekcia s formulárom pre prístup ku kódu -->
+    <section class="code-access">
+      <div class="container">
+        <h2>Want to see the code?</h2>
+        <p>Please fill out the form below. If the form does not work, please email me directly at 
+          <a href="mailto:pavolocelka.dev@gmail.com">pavolocelka.dev@gmail.com</a>.
+        </p>
+        <form id="code-access-form" action="mailto:pavolocelka.dev@gmail.com" method="POST" enctype="text/plain">
+          <!-- Skrytý input s názvom projektu -->
+          <input type="hidden" name="project" value="Project Title 1">
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="github" placeholder="Your GitHub Profile Link" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript: Fade efekt zmeny gradientu po načítaní stránky -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.body.classList.add('fade-gradient');
+      }, 500);
+    });
+  </script>
+</body>
+</html>

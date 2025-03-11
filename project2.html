@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Title 2 - Your Name Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!-- Pre projekt č. 2 pridáme triedu "project-two" -->
+<body class="project-detail project-two">
+  <!-- Header with Navigation -->
+  <header>
+    <div class="container header-container">
+      <h1>Your Name</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Project Detail Section -->
+  <main>
+    <section class="project-detail-section">
+      <div class="container">
+        <!-- Nadpis (v strede) -->
+        <h1 class="project-title">Project Title 2</h1>
+        <!-- Hlavný obrázok -->
+        <div class="project-main-image">
+          <img src="https://via.placeholder.com/800x500" alt="Main Project Image">
+        </div>
+        <!-- Technológie a detailný popis -->
+        <div class="project-info">
+          <p class="technologies"><strong>Technologies:</strong> Python, Django</p>
+          <p class="description">
+            Detailed description of the project goes here. It explains the background, features, and the challenges solved.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Dodatočná sekcia s dvojstĺpcovým rozložením -->
+    <section class="project-additional">
+      <div class="container">
+        <div class="additional-content">
+          <!-- Textová časť (vľavo) -->
+          <div class="additional-text">
+            <p>
+              Additional details about the project can be placed here. This text explains more about the implementation, design choices, and results achieved.
+            </p>
+          </div>
+          <!-- Obrázková časť (napravo) -->
+          <div class="additional-image">
+            <img src="https://via.placeholder.com/600x400" alt="Additional Project Image">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sekcia s formulárom pre prístup ku kódu -->
+    <section class="code-access">
+      <div class="container">
+        <h2>Want to see the code?</h2>
+        <p>Please fill out the form below. If the form does not work, please email me directly at <a href="mailto:pavolocelka.dev@gmail.com">pavolocelka.dev@gmail.com</a>.</p>
+        <form id="code-access-form" action="mailto:pavolocelka.dev@gmail.com" method="POST" enctype="text/plain">
+          <!-- Skrytý input s názvom projektu -->
+          <input type="hidden" name="project" value="Project Title 2">
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="github" placeholder="Your GitHub Profile Link" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript: Po načítaní stránky spustí fade efekt zmeny gradientu -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.body.classList.add('fade-gradient');
+      }, 500);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+/* Reset základných štýlov */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Globálne štýly */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  /* Pôvodný gradient – použije sa na všetkých stránkach */
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Fade efekt pre detailnú stránku projektu */
+/* Základné pravidlo pre všetky detailné stránky */
+body.project-detail::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+/* Keď je pridaná trieda fade-gradient, opacity sa zmení na 1 */
+body.project-detail.fade-gradient::after {
+  opacity: 1;
+}
+
+/* Gradient pre projekt 1 */
+body.project-detail.project-one::after {
+  background: linear-gradient(to bottom, #133b5c, #5fafb9);
+}
+
+/* Gradient pre projekt 2 */
+body.project-detail.project-two::after {
+  background: linear-gradient(to bottom, #1D976C, #93F9B9);
+}
+
+/* Štýly odkazov */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #2980b9;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* Header */
+header {
+  padding: 1rem 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav li a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+.hero-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-container p {
+  font-size: 1.5rem;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 0;
+  text-align: left;
+}
+.projects-container h2 {
+  font-size: 64px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Projektová karta */
+.project-card {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+}
+.project-card:hover {
+  transform: scale(1.02);
+}
+.project-card-text {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+.project-card-text h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.project-card-text .technologies {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.project-card-text .description {
+  font-size: 1.2rem;
+}
+.project-card-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.project-card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 4rem 0;
+  text-align: left;
+}
+.contact-container h2 {
+  font-size: 64px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.contact-container p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Project Detail Page */
+.project-detail-section {
+  padding: 4rem 0;
+}
+.project-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.project-main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.project-main-image img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-info {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.project-info .technologies {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Additional Section */
+.project-additional {
+  padding: 4rem 0;
+}
+.additional-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.additional-text {
+  flex: 1;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.additional-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.additional-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Sekcia s formulárom pre prístup ku kódu */
+.code-access {
+  padding: 4rem 0;
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+}
+.code-access h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.code-access p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.code-access form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.code-access input[type="email"],
+.code-access input[type="text"],
+.code-access textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.code-access textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.code-access button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.code-access button:hover {
+  background-color: #2980b9;
+}
+
+/* REVERSED LAYOUT: Image left, Text right */
+.project-additional.reversed-layout .additional-content {
+  flex-direction: row-reverse;
+}
+
+/* TWO IMAGES ON THE RIGHT */
+.project-additional.two-images-right .additional-images {
+  display: flex;
+  gap: 1rem; /* Adjust spacing between images as needed */
+}
+.project-additional.two-images-right .additional-images img {
+  flex: 1;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project-additional-two .additional-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-additional-two .additional-text {
+  flex: 1;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.project-additional-two .additional-images {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.project-additional-two .additional-images img {
+  width: 48%;
+  border-radius: 8px;
+}
+.project-additional-four .additional-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-additional-four .additional-text {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.project-additional-four .additional-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.project-additional-four .additional-images img {
+  width: 32%;
+  border-radius: 8px;
+  height: auto; /* Ensure the image retains its aspect ratio */
+  object-fit: contain; /* Change from 'cover' to 'contain' */
+}
